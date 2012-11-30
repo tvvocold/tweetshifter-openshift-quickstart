@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "Stopping TweetShifter"
+
+touch ${OPENSHIFT_DATA_DIR}/server.stop
+kill `ps -ef | grep ruby | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1

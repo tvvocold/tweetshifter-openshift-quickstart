@@ -1,0 +1,9 @@
+while true; do
+    if [[ -f "${OPENSHIFT_DATA_DIR}/server.stop" ]]; then
+        rm ${OPENSHIFT_DATA_DIR}/server.stop
+        exit 0
+    else
+        echo "Starting server process"
+        bundle exec ruby server.rb
+    fi
+done

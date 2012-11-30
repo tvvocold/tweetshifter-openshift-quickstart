@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd ~/app-root/repo
+
+echo "Bundle install"
+
+bundle install --deployment --path ${OPENSHIFT_DATA_DIR}/gems
+
+echo "Starting TweetShifter"
+
+.openshift/action_hooks/wrapper > ~/diy-0.1/logs/tweetshifter.log 2>&1 &

@@ -1,0 +1,11 @@
+twitter:
+  consumer_key: FILL IN
+  consumer_secret: FILL IN
+  oauth_token: FILL IN
+  oauth_token_secret: FILL IN
+
+tweetshifter:
+  target: FILL IN
+  target_path: /upload
+  fetch: 200      # tweets to fetch in one shot (0-200)
+  interval: 60    # seconds to wait after fetching tweets
