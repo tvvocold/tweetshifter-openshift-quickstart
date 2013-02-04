@@ -11,7 +11,7 @@ Create new OpenShift application
 fetch the source code
 
     cd tweetshifter
-    gill pull -s recursive -X theirs git://github.com/marekjelen/tweetshifter.git
+    gill pull -s recursive -X theirs git://github.com/openshift-quickstart/tweetshifter-openshift-quickstart.git
 
 change the configuration
 
